@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Switch</title>
+    <link rel="stylesheet" href="AnimatedDarkMode.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <nav><h1>Dark Mode Switch</h1></nav>
+    <div class="button">
+        <div class="center">
+            <input type="checkbox">
+        </div>
+    </div>
+    <h2>Animated Dark Mode</h2>
+    <p>Words</p>
+
+    <script>
+        $(document).ready(function(){
+          $('input').click(function(){
+            $('body').toggleClass('active');
+            $('.button').toggleClass('check');
+            
+          });
+        });
+    </script>
+</body>
+</html>
